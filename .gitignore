@@ -1,0 +1,18 @@
+build/
+.gradle/
+.idea/
+*.iml
+out/
+.DS_Store
+# Eclipse / VS Code Java (Buildship)
+.classpath
+.project
+.factorypath
+.settings/
+bin/
+/graphify-out/
+.claude/
+.env*
+*.log
+run/
+*.zrp

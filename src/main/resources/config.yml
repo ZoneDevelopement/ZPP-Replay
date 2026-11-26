@@ -1,0 +1,50 @@
+VERSION: 5
+RECORDING:
+  # Record matches that a player with zppreplay.record takes part in. Restart to apply.
+  ENABLED: true
+  # Matches recorded at the same time (1-256).
+  MAX-CONCURRENT: 20
+  # Players and bot bodies in one match (2-64). Larger matches are not recorded.
+  MAX-PLAYERS-PER-MATCH: 16
+  # Longest recording in minutes (1-120). A longer match is saved up to this point.
+  MAX-DURATION-MINUTES: 30
+  # Show players who died and now spectate the match. false hides them until they respawn. Restart to apply.
+  SHOW-DEAD-SPECTATORS: false
+STORAGE:
+  # Replays kept per player when no zppreplay.limit.<n> permission applies (1-1000).
+  DEFAULT-PER-PLAYER: 10
+PLAYBACK:
+  # Viewers watching at the same time (1-100). Used by the player, not yet active.
+  MAX-CONCURRENT-VIEWERS: 10
+# Hotbar items while watching a replay. SLOT is 0-8, MATERIAL a Bukkit material name.
+# ENABLED: false removes an item (/replay leave and /replay noclip still work).
+# Names and lore are in messages.yml under REPLAY.CONTROLS.
+CONTROLS:
+  FOLLOW:
+    ENABLED: true
+    SLOT: 0
+    MATERIAL: ENDER_EYE
+  NOCLIP:
+    ENABLED: true
+    SLOT: 1
+    MATERIAL: FEATHER
+  BACK:
+    ENABLED: true
+    SLOT: 3
+    MATERIAL: ARROW
+  PAUSE:
+    ENABLED: true
+    SLOT: 4
+    MATERIAL: CLOCK
+  FORWARD:
+    ENABLED: true
+    SLOT: 5
+    MATERIAL: SPECTRAL_ARROW
+  SPEED:
+    ENABLED: true
+    SLOT: 6
+    MATERIAL: SUGAR
+  LEAVE:
+    ENABLED: true
+    SLOT: 8
+    MATERIAL: BARRIER

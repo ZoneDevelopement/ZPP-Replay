@@ -1,0 +1,23 @@
+name: ZPPReplay
+version: '${version}'
+main: dev.nandi0813.zppreplay.ZPPReplay
+authors: [ Nandi0813 ]
+description: Match replay addon for ZonePractice Pro
+depend: [ ZonePracticePro, packetevents ]
+api-version: '1.21'
+libraries:
+  - org.json:json:20260814
+commands:
+  replay:
+    description: Watch your recorded matches
+    aliases: [ replays ]
+permissions:
+  zppreplay.record:
+    description: Record matches you take part in
+    default: op
+  zppreplay.watch:
+    description: Watch replays of matches you took part in
+    default: true
+  zppreplay.watch.others:
+    description: Watch and list replays of any player
+    default: op

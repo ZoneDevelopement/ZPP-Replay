@@ -1,0 +1,89 @@
+VERSION: 9
+PREFIX: '<dark_gray>[<gold>Replay<dark_gray>] '
+REPLAY:
+  ALREADY-WATCHING: '<red>You are already watching a replay.'
+  BUSY: '<red>You can only watch a replay from the lobby.'
+  NOT-FOUND: '<red>No replay has that id.'
+  NOT-WATCHING: '<red>You are not watching a replay.'
+  NO-PERMISSION: "<red>You don't have permission to watch that replay."
+  FULL: '<red>All replay viewers are busy. Try again in a moment.'
+  NO-ARENA: '<red>No free arena is available for a replay right now.'
+  LOADING: '<gray>Loading the replay...'
+  LOAD-FAILED: '<red>That replay could not be loaded.'
+  STARTED: '<green>Replay started. Use the items in your hotbar to control it.'
+  ENDED: '<yellow>The replay has ended. Use the leave item to go back to the lobby.'
+  LEFT: '<yellow>You left the replay.'
+  NOCLIP-ON: '<yellow>Noclip on. Hold sneak to fly down. Double-tap sneak or use /replay noclip to get your controls back.'
+  NOCLIP-OFF: '<yellow>Noclip off.'
+  NOCLIP-TITLE: '<aqua>Noclip'
+  NOCLIP-SUBTITLE: '<gray>Double-tap <white>sneak <gray>to get your controls back'
+  COMMAND-BLOCKED: '<red>Commands are blocked while you watch a replay. Use /replay leave to stop.'
+  USAGE: '<yellow>/replay [play <id> | leave | list <player> | noclip]'
+  NO-REPLAYS: '<yellow>No replays found.'
+  ROUND: '<gold>Round <round>'
+  ACTION-BAR: '<gray><time> / <total> <dark_gray>| <gray>Speed <speed>x'
+  ACTION-BAR-NOCLIP: '<gray><time> / <total> <dark_gray>| <aqua>Noclip <dark_gray>| <gray>Double-tap <white>sneak <gray>to exit'
+  MENU-TITLE: '<dark_gray>Your Replays'
+  MENU-ITEM-NAME: '<gold><ladder> <dark_gray>• <gray><type>'
+  MENU-ITEM-LORE:
+    - '<dark_gray><st>                              </st>'
+    - '<gray>Date: <white><date>'
+    - '<gray>Duration: <white><duration>'
+    - '<gray>Arena: <white><arena>'
+    - ''
+    - '<gray>Players:'
+  MENU-ITEM-PLAYER: '<dark_gray> • <white><name>'
+  MENU-ITEM-MORE: '<dark_gray> • <gray>and <count> more'
+  MENU-ITEM-FOOTER:
+    - ''
+    - '<green>» Click to watch «'
+  MENU-PAGE: '<gray>Page <white><page><gray>/<white><pages>'
+  MENU-PREVIOUS: '<yellow>« Previous page'
+  MENU-NEXT: '<yellow>Next page »'
+  CONTROLS:
+    FOLLOW:
+      NAME: '<aqua>Follow <dark_gray>» <white><target>'
+      LORE:
+        - '<gray>Jump to the next player.'
+        - ''
+        - '<yellow>Right-click <gray>to switch'
+    NOCLIP:
+      NAME: '<aqua>Noclip'
+      LORE:
+        - '<gray>Fly through blocks.'
+        - '<gray>Double-tap <white>sneak <gray>to come back.'
+        - ''
+        - '<yellow>Right-click <gray>to enter'
+    BACK:
+      NAME: '<gold>« Back 10s'
+      LORE:
+        - '<gray>Rewind ten seconds.'
+        - ''
+        - '<yellow>Right-click <gray>to rewind'
+    PAUSE:
+      NAME: '<gold><state>'
+      LORE:
+        - '<gray>Pause or resume the replay.'
+        - ''
+        - '<yellow>Right-click <gray>to toggle'
+    FORWARD:
+      NAME: '<gold>Forward 10s »'
+      LORE:
+        - '<gray>Skip ten seconds ahead.'
+        - ''
+        - '<yellow>Right-click <gray>to skip'
+    SPEED:
+      NAME: '<gold>Speed <dark_gray>» <white><speed>x'
+      LORE:
+        - '<gray>Speeds: 0.5x, 1x, 2x, 4x.'
+        - ''
+        - '<yellow>Right-click <gray>for the next speed'
+    LEAVE:
+      NAME: '<red>Leave Replay'
+      LORE:
+        - '<gray>Back to the lobby.'
+        - ''
+        - '<yellow>Right-click <gray>to leave'
+  CONTROL-PAUSED: 'Play'
+  CONTROL-PLAYING: 'Pause'
+  CONTROL-NO-TARGET: 'nobody'
